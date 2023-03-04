@@ -1,15 +1,43 @@
-.img {
-    max-width: 100%;
-    height: auto;
-}
-
 .homepage_banner {
     position: relative;
     text-align: center;
     color: white;
+    height: 650px;
+    overflow: hidden;
+    border-bottom: 2px solid white;
 }
 
-.banner_container {
+@media screen and (max-width: 992px) {
+    .homepage_banner {
+        position: relative;
+        text-align: center;
+        color: white;
+        height: 650px;
+        overflow: hidden;
+        border-bottom: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .homepage_banner {
+        position: relative;
+        text-align: center;
+        color: white;
+        height: 650px;
+        overflow: hidden;
+        border-bottom: 2px solid white;
+    }
+}
+
+.banner_image {
+    width: 100%;
+    min-width: 1600px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    bottom: 0;
+}
+
+.banner_link_container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,6 +45,53 @@
 }
 
 .banner_section {
-    opacity: 0.25;
-    border: 5px solid green;
+    opacity: 1;
+}
+
+.banner_link:link {
+    position: relative;
+    top: 80%;
+
+    opacity: .75;
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.banner_link:visited {
+    position: relative;
+    top: 80%;
+
+    opacity: .75;
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.banner_link:hover {
+    position: relative;
+    top: 80%;
+
+    opacity: .95;
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.banner_link:active {
+    position: relative;
+    top: 80%;
+
+    opacity: .75;
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
 }
