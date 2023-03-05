@@ -1,4 +1,12 @@
-.homepage_banner {
+.homepage_banner_outer {
+
+}
+
+.homepage_banner_inner {
+    /*height: 250px;
+    position: sticky;
+    top: 0;*/
+
     position: relative;
     text-align: center;
     color: white;
@@ -7,8 +15,9 @@
     border-bottom: 2px solid white;
 }
 
-@media screen and (max-width: 992px) {
-    .homepage_banner {
+/* Allows dynamic CSS for different screen widths */
+/*@media screen and (max-width: 992px) {
+    .homepage_banner_inner {
         position: relative;
         text-align: center;
         color: white;
@@ -19,7 +28,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .homepage_banner {
+    .homepage_banner_inner {
         position: relative;
         text-align: center;
         color: white;
@@ -27,7 +36,7 @@
         overflow: hidden;
         border-bottom: 2px solid white;
     }
-}
+}*/
 
 .banner_image {
     width: 100%;
